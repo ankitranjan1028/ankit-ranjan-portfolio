@@ -5,9 +5,9 @@ import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
   AiOutlineTwitter,
-  AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 function Home2() {
   return (
@@ -19,37 +19,23 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
+            I fell in love with programming, and over time, I’ve built a strong 
+            foundation in <i><b className="purple">JavaScript, React and Node.js,</b></i> along with a deep understanding
+             of data structures and algorithms.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
+              {/* <br />With hands-on experience in frontend and full-stack development,
+               I enjoy creating efficient, scalable, and responsive <i><b className="purple">web applications.</b></i>
+              <br />
+              <br /> */}
+              Whether it’s optimizing <i><b className="purple">React applications</b></i>, architecting <i><b className="purple">full-stack solutions</b></i>,
+               or exploring new tools and frameworks, I’m always eager to push boundaries and learn. &nbsp;
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              I specialize in <i><b className="purple">React.js, Next.js, Redux, and Tailwind CSS,</b></i> 
+              ensuring seamless UI/UX experiences. On the backend, I leverage <i><b className="
+              purple">Node.js, 
+              Express, and MongoDB</b></i> to build robust and high-performance applications.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -67,7 +53,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/ankitranjan1028"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,7 +63,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://x.com/AnkitRanjan1028"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -87,7 +73,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/ankit-ranjan-a73b9a228/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,12 +83,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="mailto:aankitrn17@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <SiGmail />
                 </a>
               </li>
             </ul>
