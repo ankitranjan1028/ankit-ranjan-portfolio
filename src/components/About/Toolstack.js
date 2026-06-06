@@ -5,13 +5,13 @@ import {
   SiPostman,
   SiVercel,
 } from "react-icons/si";
-import { FaGithubSquare, FaWindows } from "react-icons/fa";
+import { FaGithubSquare, FaApple } from "react-icons/fa";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <FaWindows/>
+        <FaApple/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />

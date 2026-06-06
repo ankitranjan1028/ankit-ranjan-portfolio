@@ -2,6 +2,8 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
 import { BsFiletypeCss } from "react-icons/bs";
+import { TbBrandTypescript, TbBrandStorybook } from "react-icons/tb";
+
 import {
   DiJavascript1,
   DiReact,
@@ -14,8 +16,11 @@ import {
   SiRedux,
   SiNextdotjs,
   SiMysql,
-  SiTailwindcss
+  SiTailwindcss,
+  SiSupabase
 } from "react-icons/si";
+
+
 
 
 function Techstack() {
@@ -56,6 +61,15 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiTailwindcss />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <TbBrandTypescript/>
+      </Col>
+       <Col xs={4} md={2} className="tech-icons">
+        <SiSupabase/>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <TbBrandStorybook/>
       </Col>
     </Row>
   );

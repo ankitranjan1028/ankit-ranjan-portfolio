@@ -19,23 +19,21 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-            I fell in love with programming, and over time, I’ve built a strong 
-            foundation in <i><b className="purple">JavaScript, React and Node.js,</b></i> along with a deep understanding
-             of data structures and algorithms.
+            I fell in love with programming and have since grown into a
+              professional engineer with hands-on experience shipping
+              production applications. I have a strong foundation in{" "}
+              <i><b className="purple">TypeScript, React, Next.js, and Node.js</b></i>,
+              backed by a deep understanding of data structures and algorithms.
               <br />
               <br />
-              {/* <br />With hands-on experience in frontend and full-stack development,
-               I enjoy creating efficient, scalable, and responsive <i><b className="purple">web applications.</b></i>
-              <br />
-              <br /> */}
               Whether it’s optimizing <i><b className="purple">React applications</b></i>, architecting <i><b className="purple">full-stack solutions</b></i>,
                or exploring new tools and frameworks, I’m always eager to push boundaries and learn. &nbsp;
               <br />
               <br />
-              I specialize in <i><b className="purple">React.js, Next.js, Redux, and Tailwind CSS,</b></i> 
-              ensuring seamless UI/UX experiences. On the backend, I leverage <i><b className="
-              purple">Node.js, 
-              Express, and MongoDB</b></i> to build robust and high-performance applications.
+              I specialize in building scalable, type-safe, and performant
+              applications — from <i><b className="purple">server-rendered Next.js frontends</b></i> to{" "}
+              <i><b className="purple">React Native mobile apps</b></i> and robust{" "}
+              <i><b className="purple">Node.js + MongoDB backends</b></i>.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
