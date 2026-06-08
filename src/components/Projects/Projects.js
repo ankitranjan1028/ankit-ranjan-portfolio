@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import coloured_text_generator from "../../Assets/Projects/discord_color_text_generator.jpg";
+import code_editor from "../../Assets/Projects/code-editor.png";
 import coupon from "../../Assets/Projects/coupon-distribution.jpg";
 import gemini_clone from "../../Assets/Projects/gemini-clone.jpg";
 import cinova from "../../Assets/Projects/cinova.png";
@@ -45,12 +45,12 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={coloured_text_generator}
+              imgPath={code_editor}
               isBlog={false}
-              title="Discord Coloured Text Generator"
-              description="A Discord Colored Text Generator built with Next.js and Mantine UI that allows users to style their messages using ANSI color codes. It provides an intuitive interface to customize and preview colored text before sharing on Discord."
-              ghLink="https://github.com/ankitranjan1028/text-generator"
-              demoLink="https://text-generator-five.vercel.app/"              
+              title="Codezy"
+              description="A full-stack online code editor built with Next.js, React, and MongoDB, featuring real-time multi-language code execution, secure authentication, email verification, password recovery, and an intuitive project/file management system with a responsive user interface."
+              ghLink="https://github.com/ankitranjan1028/code-editor"
+              demoLink="https://code-editor-ruddy-two.vercel.app/"              
             />
           </Col>
 
