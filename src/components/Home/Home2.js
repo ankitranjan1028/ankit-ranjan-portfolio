@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import myImg from "../../Assets/avatar.png";
+import myImg from "../../Assets/image.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -18,27 +18,26 @@ function Home2() {
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
-            <p className="home-about-body">
-            I fell in love with programming and have since grown into a
-              professional engineer with hands-on experience shipping
-              production applications. I have a strong foundation in{" "}
-              <i><b className="purple">TypeScript, React, Next.js, and Node.js</b></i>,
-              backed by a deep understanding of data structures and algorithms.
-              <br />
-              <br />
-              Whether it’s optimizing <i><b className="purple">React applications</b></i>, architecting <i><b className="purple">full-stack solutions</b></i>,
-               or exploring new tools and frameworks, I’m always eager to push boundaries and learn. &nbsp;
-              <br />
-              <br />
-              I specialize in building scalable, type-safe, and performant
-              applications — from <i><b className="purple">server-rendered Next.js frontends</b></i> to{" "}
-              <i><b className="purple">React Native mobile apps</b></i> and robust{" "}
-              <i><b className="purple">Node.js + MongoDB backends</b></i>.
-            </p>
+          <p className="home-about-body">
+  I'm a Software Engineer who loves transforming ideas into reliable,
+  scalable products. I've grown from a curious programmer into a
+  professional engineer with hands-on experience shipping production
+  applications, backed by a strong foundation in{" "}
+  <i><b className="purple">TypeScript, React, Next.js, and Node.js</b></i>{" "}
+  and a deep understanding of data structures and algorithms.
+  <br />
+
+  <br />
+  I'm at my best building things that are scalable, type-safe, and fast
+  — from <i><b className="purple">server-rendered Next.js frontends</b></i>{" "}
+  to <i><b className="purple">React Native mobile apps</b></i> and
+  robust{" "}
+  <i><b className="purple">Node.js + MongoDB backends</b></i>.
+</p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              {/* <img src={myImg} className="img-fluid" alt="avatar" /> */}
+              <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
