@@ -37,23 +37,12 @@ function Home() {
               </div>
 
               <div className="hero-cta-group">
-                <Link to="/project" className="btn-primary-gradient">
+                <Link to="/project#production-systems" className="btn-primary-gradient">
                   View My Work <HiArrowRight />
                 </Link>
                 <Link to="/resume" className="btn-outline-glass">
                   <HiOutlineDocumentText /> Download Resume
                 </Link>
-              </div>
-
-              <div className="hero-stats">
-                <div>
-                  <div className="hero-stat-value">SDE</div>
-                  <div className="hero-stat-label">At Sunstone</div>
-                </div>
-                <div>
-                  <div className="hero-stat-value">IIIT</div>
-                  <div className="hero-stat-label">Ranchi '25</div>
-                </div>
               </div>
             </Col>
 
