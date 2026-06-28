@@ -32,7 +32,7 @@ function NavBar() {
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
-      <Container>
+      <Container className="navbar-container">
         <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
           <span className="brand-text">AR.</span>
         </Navbar.Brand>
