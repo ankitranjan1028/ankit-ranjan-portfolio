@@ -346,6 +346,10 @@ button:focus {
 /* --------- */
 /* Home */
 /* --------- */
+.home-page {
+  overflow: visible;
+}
+
 #tsparticles {
   position: fixed !important;
   width: 100%;
@@ -356,13 +360,10 @@ button:focus {
 
 .home-section {
   position: relative;
-  min-height: calc(85vh - var(--nav-offset));
-  display: flex;
-  align-items: center;
+  min-height: auto;
   background: var(--bg-primary);
-  overflow-x: hidden;
-  overflow-y: visible;
-  padding: calc(var(--nav-offset) + 16px) 0 48px !important;
+  overflow: visible;
+  padding: calc(var(--nav-offset) + 24px) 0 32px !important;
 }
 
 .home-section::before {
@@ -439,20 +440,20 @@ button:focus {
 }
 
 .heading {
-  font-size: clamp(1.25rem, 4vw, 1.85rem) !important;
+  font-size: clamp(1.1rem, 3.5vw, 1.5rem) !important;
   font-weight: 500 !important;
   color: var(--text-secondary) !important;
   padding-left: 0 !important;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.3rem;
 }
 
 .heading-name {
-  font-size: clamp(2rem, 7vw, 3.75rem) !important;
+  font-size: clamp(1.75rem, 6vw, 3rem) !important;
   font-weight: 800 !important;
-  line-height: 1.08 !important;
+  line-height: 1.1 !important;
   letter-spacing: -0.03em;
   padding-left: 0 !important;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
 }
 
 .main-name {
@@ -477,19 +478,20 @@ button:focus {
 }
 
 .typewriter-wrapper {
-  min-height: 2.5rem;
-  margin: 0.65rem 0 1rem;
+  min-height: 2rem;
+  margin: 0.5rem 0 0.85rem;
 }
 
 .Typewriter__wrapper {
-  font-size: clamp(1.2rem, 3vw, 1.75rem) !important;
+  font-size: clamp(0.9rem, 2.2vw, 1.25rem) !important;
   font-family: "JetBrains Mono", monospace !important;
   color: var(--accent-violet) !important;
   font-weight: 500 !important;
+  line-height: 1.4 !important;
 }
 
 .Typewriter__cursor {
-  font-size: clamp(1.2rem, 3vw, 1.75rem) !important;
+  font-size: clamp(0.9rem, 2.2vw, 1.25rem) !important;
   color: var(--accent-cyan) !important;
 }
 
@@ -588,7 +590,7 @@ button:focus {
 /* --------- */
 .home-about-section {
   position: relative;
-  padding: var(--section-y) 0 !important;
+  padding: 40px 0 var(--section-y) !important;
   background: var(--section-background-color);
 }
 
@@ -935,6 +937,15 @@ button:focus {
   margin: 0 0 1.25rem;
 }
 
+@media (min-width: 992px) {
+  .work-block-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2rem;
+    row-gap: 0.15rem;
+  }
+}
+
 .work-block-list li {
   position: relative;
   padding-left: 1rem;
@@ -978,11 +989,22 @@ button:focus {
 
 @media (max-width: 767px) {
   .work-block .card-body {
-    padding: 1.1rem 1.15rem;
+    padding: 1rem;
   }
 
   .work-block-list li {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    line-height: 1.45;
+    margin-bottom: 0.45rem;
+  }
+
+  .work-block-stack {
+    gap: 6px;
+  }
+
+  .work-block-tag {
+    font-size: 0.68rem;
+    padding: 3px 8px;
   }
 }
 
@@ -1704,13 +1726,14 @@ button:focus {
   .typewriter-wrapper {
     display: flex;
     justify-content: center;
-    min-height: 1.75rem;
-    margin: 0.35rem 0 0.75rem;
+    min-height: 1.6rem;
+    margin: 0.3rem 0 0.65rem;
+    padding: 0 0.5rem;
   }
 
   .Typewriter__wrapper,
   .Typewriter__cursor {
-    font-size: 1rem !important;
+    font-size: 0.82rem !important;
     text-align: center;
   }
 
@@ -1901,7 +1924,7 @@ button:focus {
   }
 
   .heading-name {
-    font-size: clamp(1.85rem, 9vw, 2.5rem) !important;
+    font-size: clamp(1.6rem, 8vw, 2.15rem) !important;
   }
 
   .hero-image-wrapper {

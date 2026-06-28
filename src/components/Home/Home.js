@@ -9,7 +9,7 @@ import { HiArrowRight, HiOutlineDocumentText } from "react-icons/hi";
 
 function Home() {
   return (
-    <section>
+    <section className="home-page">
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
@@ -41,7 +41,7 @@ function Home() {
                   View My Work <HiArrowRight />
                 </Link>
                 <Link to="/resume" className="btn-outline-glass">
-                  <HiOutlineDocumentText /> Download Resume
+                  <HiOutlineDocumentText /> View Resume
                 </Link>
               </div>
             </Col>

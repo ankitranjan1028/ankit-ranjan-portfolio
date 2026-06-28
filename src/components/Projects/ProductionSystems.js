@@ -2,15 +2,15 @@ import React, { useEffect, useRef } from "react";
 import Card from "react-bootstrap/Card";
 
 const workPoints = [
-  "Published internal TypeScript packages — shared API contracts/DTOs (auth, fees, DSA submissions, enrolments) and MUI component library with Storybook + Chromatic CI.",
-  "Built student portal on Next.js 16 + Redux Toolkit — OAuth cookie auth, token refresh, RBAC permission gates, redux-persist session state.",
-  "Implemented Monaco-based code runners — multi-language DSA stubs with async judge job polling; dev-html assessments with pixelmatch visual diff against baselines.",
-  "Developed admin portal modules — question bank authoring (DSA + dev-html test suites), campus/course/enrolment CRUD, fee dashboards, payment aggregator setup (Cashfree/Razorpay/Easebuzz).",
-  "Integrated Cashfree PG SDK end-to-end — paymentSessionId flow, fee checkout on web, aggregator config UI; wired fee types through shared core contracts.",
-  "Shipped React Native student app — Google OAuth via native Sign-In + WebView fallback, Keychain token storage, DSA code editor, session recording WebView, FCM push notifications.",
-  "Built free-course platform — Supabase OTP phone auth, video progress persistence, UTM attribution cookies, Vimeo TUS upload, client-side certificate generation + Nodemailer pipeline.",
-  "Owned mentorship platform — NextAuth Google OAuth, MongoDB/Mongoose schemas, Google Calendar free/busy API, Meet link generation, token-based session credit model with admin approval flows.",
-  "Added AI-assisted dev-html question generation via Groq/HuggingFace inference API; Firebase Admin push notifications; Playwright e2e for assessment flows.",
+  "Published internal TS packages — shared API DTOs (auth, fees, DSA, enrolments); MUI lib with Storybook + Chromatic CI.",
+  "Next.js 16 student portal + Redux Toolkit — OAuth cookies, token refresh, RBAC gates, redux-persist sessions.",
+  "Monaco DSA runners — multi-lang stubs, async judge polling; dev-html tests with pixelmatch visual diff.",
+  "Admin portal — DSA/dev-html question bank, campus/course/enrolment CRUD, fee dashboards, PG aggregator config.",
+  "Cashfree PG SDK — paymentSessionId checkout, fee UI, Razorpay/Easebuzz setup via shared core contracts.",
+  "React Native app — Google OAuth (native + WebView), Keychain tokens, DSA editor, session WebView, FCM push.",
+  "Free-course platform — Supabase OTP auth, Vimeo TUS uploads, UTM tracking, PDF certs + Nodemailer pipeline.",
+  "Mentorship platform — NextAuth, MongoDB, Google Calendar/Meet API, token-based session credits + admin flows.",
+  "Groq/HuggingFace AI question gen, Firebase Admin push notifications, Playwright e2e for assessments.",
 ];
 
 const stack = [
@@ -26,6 +26,8 @@ const stack = [
   "Cashfree",
   "Google Calendar API",
   "Firebase FCM",
+  "Groq",
+  "Vimeo TUS",
   "Storybook",
   "Playwright",
 ];

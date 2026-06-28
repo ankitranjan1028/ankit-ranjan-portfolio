@@ -2,6 +2,7 @@
   min-height: 100vh;
   position: relative;
   background: #07070d;
+  overflow: visible;
 }
 
 .App::before {

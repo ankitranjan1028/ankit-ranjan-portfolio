@@ -45,7 +45,7 @@ function Projects() {
 
         <div id="production-systems" className="projects-group">
           <Row className="justify-content-center">
-            <Col lg={10}>
+            <Col lg={12}>
               <ProductionSystems />
             </Col>
           </Row>
