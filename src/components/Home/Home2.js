@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/image.png";
 import Tilt from "react-parallax-tilt";
@@ -9,7 +9,31 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
+function useIsMobile(breakpoint = 768) {
+  const [isMobile, setIsMobile] = useState(() =>
+    typeof window !== "undefined" ? window.innerWidth < breakpoint : false
+  );
+
+  useEffect(() => {
+    const media = window.matchMedia(`(max-width: ${breakpoint - 1}px)`);
+    const handleChange = (e) => setIsMobile(e.matches);
+    handleChange(media);
+    media.addEventListener("change", handleChange);
+    return () => media.removeEventListener("change", handleChange);
+  }, [breakpoint]);
+
+  return isMobile;
+}
+
 function Home2() {
+  const isMobile = useIsMobile();
+
+  const avatar = (
+    <div className="avatar-wrapper">
+      <img src={myImg} alt="Ankit Ranjan" />
+    </div>
+  );
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -35,11 +59,13 @@ function Home2() {
             </p>
           </Col>
           <Col lg={4} className="myAvtar">
-            <Tilt tiltMaxAngleX={15} tiltMaxAngleY={15} scale={1.02}>
-              <div className="avatar-wrapper">
-                <img src={myImg} alt="Ankit Ranjan" />
-              </div>
-            </Tilt>
+            {isMobile ? (
+              avatar
+            ) : (
+              <Tilt tiltMaxAngleX={15} tiltMaxAngleY={15} scale={1.02}>
+                {avatar}
+              </Tilt>
+            )}
           </Col>
         </Row>
         <Row>

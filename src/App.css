@@ -1,8 +1,8 @@
 .App {
-  min-height: 100vh;
   position: relative;
   background: #07070d;
-  overflow: visible;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 .App::before {
