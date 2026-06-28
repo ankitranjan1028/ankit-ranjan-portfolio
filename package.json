@@ -45,5 +45,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "overrides": {
+    "memfs": "3.5.3"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }

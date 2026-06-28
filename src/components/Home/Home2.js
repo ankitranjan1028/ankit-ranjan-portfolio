@@ -13,39 +13,40 @@ function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
-        <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+        <Row className="align-items-center">
+          <Col lg={8} className="home-about-description">
+            <span className="section-label">About Me</span>
+            <h1>
+              Let Me <span className="purple">Introduce</span> Myself
             </h1>
-          <p className="home-about-body">
-  I'm a Software Engineer who loves transforming ideas into reliable,
-  scalable products. I've grown from a curious programmer into a
-  professional engineer with hands-on experience shipping production
-  applications, backed by a strong foundation in{" "}
-  <i><b className="purple">TypeScript, React, Next.js, and Node.js</b></i>{" "}
-  and a deep understanding of data structures and algorithms.
-  <br />
-
-  <br />
-  I'm at my best building things that are scalable, type-safe, and fast
-  — from <i><b className="purple">server-rendered Next.js frontends</b></i>{" "}
-  to <i><b className="purple">React Native mobile apps</b></i> and
-  robust{" "}
-  <i><b className="purple">Node.js + MongoDB backends</b></i>.
-</p>
+            <p className="home-about-body">
+              I'm a Software Engineer who loves transforming ideas into reliable,
+              scalable products. I've grown from a curious programmer into a
+              professional engineer with hands-on experience shipping production
+              applications, backed by a strong foundation in{" "}
+              <i><b className="purple">TypeScript, React, Next.js, and Node.js</b></i>{" "}
+              and a deep understanding of data structures and algorithms.
+              <br /><br />
+              I'm at my best building things that are scalable, type-safe, and fast
+              — from <i><b className="purple">server-rendered Next.js frontends</b></i>{" "}
+              to <i><b className="purple">React Native mobile apps</b></i> and
+              robust{" "}
+              <i><b className="purple">Node.js + MongoDB backends</b></i>.
+            </p>
           </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+          <Col lg={4} className="myAvtar">
+            <Tilt tiltMaxAngleX={15} tiltMaxAngleY={15} scale={1.02}>
+              <div className="avatar-wrapper">
+                <img src={myImg} alt="Ankit Ranjan" />
+              </div>
             </Tilt>
           </Col>
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            <h1>Find Me On</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="purple">connect</span> with me
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -53,7 +54,8 @@ function Home2() {
                   href="https://github.com/ankitranjan1028"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="home-social-icons"
+                  aria-label="GitHub"
                 >
                   <AiFillGithub />
                 </a>
@@ -63,7 +65,8 @@ function Home2() {
                   href="https://x.com/AnkitRanjan1028"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="home-social-icons"
+                  aria-label="Twitter"
                 >
                   <AiOutlineTwitter />
                 </a>
@@ -73,7 +76,8 @@ function Home2() {
                   href="https://www.linkedin.com/in/ankit-ranjan-a73b9a228/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="home-social-icons"
+                  aria-label="LinkedIn"
                 >
                   <FaLinkedinIn />
                 </a>
@@ -83,7 +87,8 @@ function Home2() {
                   href="mailto:aankitrn17@gmail.com"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour home-social-icons"
+                  className="home-social-icons"
+                  aria-label="Email"
                 >
                   <SiGmail />
                 </a>
@@ -95,4 +100,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;

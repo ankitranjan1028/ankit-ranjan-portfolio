@@ -4,25 +4,37 @@ import GitHubCalendar from "react-github-calendar";
 
 function Github() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-      <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
-        Days I <strong className="purple">Code</strong>
+    <div className="github-section">
+      <span className="section-label section-label-center">
+        Activity
+      </span>
+      <h1 className="project-heading">
+        Days I <span className="purple">Code</span>
       </h1>
 
-      <img
-        src="https://leetcard.jacoblin.cool/ranjann_aankit28?theme=dark&font=Karma&ext=contest"
-        alt="LeetCode Stats"
-        style={{ maxWidth: "800px", width: "100%", marginBottom: "50px" }}
-      />
+      <Row style={{ justifyContent: "center", marginBottom: "40px" }}>
+        <img
+          src="https://leetcard.jacoblin.cool/ranjann_aankit28?theme=dark&font=Karma&ext=contest"
+          alt="LeetCode Stats"
+          style={{
+            maxWidth: "800px",
+            width: "100%",
+            borderRadius: "16px",
+            border: "1px solid rgba(255,255,255,0.08)",
+          }}
+        />
+      </Row>
 
-      <GitHubCalendar
-        username="ankitranjan1028-vedam"
-        blockSize={15}
-        blockMargin={5}
-        color="#c084f5"
-        fontSize={16}
-      />
-    </Row>
+      <Row style={{ justifyContent: "center" }}>
+        <GitHubCalendar
+          username="ankitranjan1028-vedam"
+          blockSize={14}
+          blockMargin={4}
+          color="#22d3ee"
+          fontSize={14}
+        />
+      </Row>
+    </div>
   );
 }
 

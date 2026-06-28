@@ -1,76 +1,49 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
 import { BsFiletypeCss } from "react-icons/bs";
 import { TbBrandTypescript, TbBrandStorybook } from "react-icons/tb";
-
 import {
   DiJavascript1,
   DiReact,
   DiNodejs,
   DiMongodb,
   DiGit,
-  DiHtml5
+  DiHtml5,
 } from "react-icons/di";
 import {
   SiRedux,
   SiNextdotjs,
   SiMysql,
   SiTailwindcss,
-  SiSupabase
+  SiSupabase,
 } from "react-icons/si";
+import SkillIcon from "./SkillIcon";
 
-
-
+const skills = [
+  { icon: <CgCPlusPlus />, name: "C++" },
+  { icon: <DiJavascript1 />, name: "JavaScript" },
+  { icon: <BsFiletypeCss />, name: "CSS" },
+  { icon: <DiNodejs />, name: "Node.js" },
+  { icon: <DiReact />, name: "React" },
+  { icon: <SiMysql />, name: "MySQL" },
+  { icon: <DiMongodb />, name: "MongoDB" },
+  { icon: <SiNextdotjs />, name: "Next.js" },
+  { icon: <DiGit />, name: "Git" },
+  { icon: <SiRedux />, name: "Redux" },
+  { icon: <DiHtml5 />, name: "HTML5" },
+  { icon: <SiTailwindcss />, name: "Tailwind" },
+  { icon: <TbBrandTypescript />, name: "TypeScript" },
+  { icon: <SiSupabase />, name: "Supabase" },
+  { icon: <TbBrandStorybook />, name: "Storybook" },
+];
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <BsFiletypeCss />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMysql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedux />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiHtml5 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiTailwindcss />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <TbBrandTypescript/>
-      </Col>
-       <Col xs={4} md={2} className="tech-icons">
-        <SiSupabase/>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <TbBrandStorybook/>
-      </Col>
+    <Row className="tech-stack-row">
+      {skills.map((skill) => (
+        <SkillIcon key={skill.name} icon={skill.icon} name={skill.name} />
+      ))}
     </Row>
   );
 }

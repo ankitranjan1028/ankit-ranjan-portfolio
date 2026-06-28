@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -8,25 +8,24 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+  const year = new Date().getFullYear();
+
   return (
-    <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Ankit Ranjan</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year}</h3>
-        </Col>
-        <Col md="4" className="footer-body">
+    <footer className="footer">
+      <Container>
+        <div className="footer-content">
+          <p className="footer-text">
+            Designed & Built by{" "}
+            <span className="footer-brand">Ankit Ranjan</span>
+          </p>
+          <p className="footer-text">© {year} All rights reserved</p>
           <ul className="footer-icons">
             <li className="social-icons">
               <a
                 href="https://github.com/ankitranjan1028"
-                style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub"
               >
                 <AiFillGithub />
               </a>
@@ -34,9 +33,9 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://x.com/AnkitRanjan1028"
-                style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Twitter"
               >
                 <AiOutlineTwitter />
               </a>
@@ -44,9 +43,9 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/ankit-ranjan-a73b9a228/"
-                style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn"
               >
                 <FaLinkedinIn />
               </a>
@@ -54,17 +53,17 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="mailto:aankitrn17@gmail.com"
-                style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Email"
               >
                 <SiGmail />
               </a>
             </li>
           </ul>
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </Container>
+    </footer>
   );
 }
 
