@@ -10,8 +10,8 @@ html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   background-color: #07070d;
+  width: 100%;
   overflow-x: hidden;
-  max-width: 100%;
 }
 
 @media (hover: none) and (pointer: coarse) {
@@ -27,11 +27,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #07070d;
   color: #f8fafc;
+  width: 100%;
   overflow-x: hidden;
-  overscroll-behavior-y: none;
-  overscroll-behavior-x: none;
+  overflow-y: auto;
+  min-height: 100%;
   -webkit-overflow-scrolling: touch;
-  max-width: 100%;
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 ::selection {

@@ -387,17 +387,15 @@ button:focus {
 /* --------- */
 .home-page {
   width: 100%;
-  max-width: 100%;
   overflow-x: hidden;
-  overflow-y: visible;
-  touch-action: pan-y;
 }
 
 #tsparticles {
   position: fixed !important;
-  width: 100%;
-  max-width: 100vw;
-  height: 100%;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
   z-index: 0;
   pointer-events: none;
 }
@@ -406,52 +404,43 @@ button:focus {
   position: relative;
   min-height: auto;
   width: 100%;
-  max-width: 100%;
   background: var(--bg-primary);
-  overflow-x: hidden;
-  overflow-y: visible;
   padding: calc(var(--nav-offset) + 24px) 0 32px !important;
+  overflow: hidden;
 }
 
 .home-section::before {
   content: "";
   position: absolute;
-  top: -10%;
+  top: 0;
   right: 0;
-  width: min(600px, 90vw);
-  height: min(600px, 90vw);
+  width: min(420px, 80vw);
+  height: min(420px, 80vw);
+  transform: translate(25%, -25%);
   background: radial-gradient(circle, rgba(34, 211, 238, 0.15) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
-  animation: float 8s ease-in-out infinite;
 }
 
 .home-section::after {
   content: "";
   position: absolute;
-  bottom: -5%;
+  bottom: 0;
   left: 0;
-  width: min(500px, 85vw);
-  height: min(500px, 85vw);
+  width: min(360px, 75vw);
+  height: min(360px, 75vw);
+  transform: translate(-25%, 25%);
   background: radial-gradient(circle, rgba(167, 139, 250, 0.12) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
-  animation: float 10s ease-in-out infinite reverse;
-}
-
-@keyframes float {
-  0%, 100% { transform: translate(0, 0); }
-  50% { transform: translate(10px, -10px); }
 }
 
 .home-content {
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 100%;
   padding: 0 !important;
   color: var(--text-primary);
-  overflow-x: hidden;
 }
 
 .home-header {
@@ -535,6 +524,20 @@ button:focus {
   max-width: 100%;
   min-height: 2rem;
   margin: 0.5rem 0 0.85rem;
+  overflow: hidden;
+}
+
+.typewriter-inner {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.Typewriter {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
   overflow: hidden;
 }
 
@@ -657,10 +660,9 @@ button:focus {
 .home-about-section {
   position: relative;
   width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
   padding: 40px 0 var(--section-y) !important;
   background: var(--section-background-color);
+  overflow: hidden;
 }
 
 .home-about-description {
@@ -687,12 +689,14 @@ button:focus {
   justify-content: center;
   align-items: center;
   padding-top: 1.5rem !important;
+  overflow: hidden;
 }
 
 .avatar-wrapper {
   position: relative;
   max-width: 220px;
   width: 100%;
+  overflow: hidden;
 }
 
 .avatar-wrapper::before {
@@ -1768,18 +1772,16 @@ button:focus {
 
   .home-section::before,
   .home-section::after {
-    width: min(240px, 70vw);
-    height: min(240px, 70vw);
+    width: min(200px, 55vw);
+    height: min(200px, 55vw);
   }
 
   .home-section::before {
-    top: -5%;
-    right: -15%;
+    transform: translate(15%, -15%);
   }
 
   .home-section::after {
-    bottom: 0;
-    left: -15%;
+    transform: translate(-15%, 15%);
   }
 
   .home-header {

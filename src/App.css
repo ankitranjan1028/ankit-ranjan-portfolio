@@ -1,8 +1,8 @@
 .App {
   position: relative;
+  width: 100%;
   background: #07070d;
   overflow-x: hidden;
-  max-width: 100%;
 }
 
 .App::before {

@@ -33,7 +33,9 @@ function Home() {
               </h1>
 
               <div className="typewriter-wrapper">
-                <Type />
+                <div className="typewriter-inner">
+                  <Type />
+                </div>
               </div>
 
               <div className="hero-cta-group">
